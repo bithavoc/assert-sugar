@@ -1,0 +1,29 @@
+{
+  "name": "assert-sugar",
+  "version": "0.0.1",
+  "description": "Assert additional functions taken from expresso and highly useful in mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter=spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bithavoc/assert-sugar.git"
+  },
+  "keywords": [
+    "assert",
+    "testing",
+    "mocha",
+    "expresso",
+    "vows"
+  ],
+  "author": "Bithavoc <im@bithavoc.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bithavoc/assert-sugar/issues"
+  },
+  "homepage": "https://github.com/bithavoc/assert-sugar",
+  "devDependencies": {
+    "mocha": "^1.18.2"
+  }
+}
