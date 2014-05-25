@@ -1,6 +1,6 @@
 {
   "name": "assert-sugar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Assert additional functions taken from expresso and highly useful in mocha",
   "main": "index.js",
   "scripts": {
