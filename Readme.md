@@ -13,6 +13,8 @@ Here it is:
 * `isUndefined(value, [message])`
 * `isNull(value, [message])`
 * `isNotNull(value, [message])`
+* `isObject(value, [message])`
+* `isNotObject(value, [message])`
 
 Btw, this module doesn't cause diabetes. If you use `assert-sugar` with a test suite that already provide some of these functions, these functions will remain intact.
 
@@ -39,7 +41,7 @@ Want to add more sugar?
 
 License (MIT)
 ====
-Copyright (c) 2014 Bithavoc.io and Contributors - http://www.bithavoc.io
+Copyright (c) 2014 Bithavoc.io and Contributors - http://bithavoc.io
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

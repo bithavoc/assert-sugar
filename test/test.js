@@ -16,6 +16,9 @@ function generateTestExports(target, name) {
         it('should export isNotNull as function', function() {
             assert(typeof target.isNotNull == 'function');
         });
+        it('should export isObject as function', function() {
+            assert(typeof target.isObject == 'function');
+        });
     });
 }
 generateTestExports(assert, 'Global Node.js Assert Module');
@@ -65,6 +68,26 @@ describe('assert-sugar asserts', function() {
     it('isNotNull should not throw when a non-null value is given', function() {
         assert.doesNotThrow(function() {
             sugar.isNotNull(1);
+        });
+    });
+    it('isObject should throw when not-object value is given', function() {
+        assert.throws(function() {
+            sugar.isObject(1);
+        }, assert.AssertionError);
+    });
+    it('isObject should not throw when an object value is given', function() {
+        assert.doesNotThrow(function() {
+            sugar.isObject({});
+        });
+    });
+    it('isNotObject should throw when object value is given', function() {
+        assert.throws(function() {
+            sugar.isNotObject({});
+        }, assert.AssertionError);
+    });
+    it('isNotObject should not throw when a non-object value is given', function() {
+        assert.doesNotThrow(function() {
+            sugar.isNotObject(1);
         });
     });
 });
