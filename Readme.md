@@ -2,7 +2,7 @@ assert-sugar
 ===
 One of the most stupid Node.js modules ever!
 
-This ~~shitty~~ module will enchance [Node.js's Assert](http://nodejs.org/api/assert.html) with more assertions (contributions welcome).
+This ~~shitty~~ module will enhance [Node.js' Assert](http://nodejs.org/api/assert.html) with more assertions (contributions welcome.)
 
 Where is the sugar?
 ====
@@ -16,15 +16,15 @@ Here it is:
 * `isObject(value, [message])`
 * `isNotObject(value, [message])`
 
-Btw, this module doesn't cause diabetes. If you use `assert-sugar` with a test suite that already provide some of these functions, these functions will remain intact.
+Btw, this module doesn't cause diabetes. If you use `assert-sugar` with a test suite that already provides some of these functions, these functions will remain intact.
 
 Usage
 ===
 
-    var assert = require('assert);
+    var assert = require('assert');
     var sugar = require('assert-sugar');
     
-    assert.isDefined(this.thisDoesNotExists) // throws assert.AssertionError
+    assert.isDefined(this.thisDoesNotExist) // throws assert.AssertionError
 
 Tests
 ===
